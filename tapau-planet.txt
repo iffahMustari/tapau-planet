@@ -1,0 +1,40 @@
+/tapau-planet/
+│
+├── Connection.php              # Connection ke MySQL
+├── login.php                   # Login form (customer/admin)
+├── register.php                # Registration page
+├── logout.php                  # Logout function
+├── index.php                    # Homepage: highlights + suggested food
+├── menu.php                    # Display all food items (filter/search)
+├── cart.php                    # Cart management
+├── checkout.php                # Payment & delivery details
+├── confirmation.php            # Order success page
+├── profile.php                 # View/update customer info
+├── order_history.php           # View past orders #
+├── review.php                  # Form to submit reviews #
+├── view_reviews.php            # View all reviews per menu item #
+├── chatbot.js                  # AI chatbot script (optional) #
+├── chat_widget.php             # Embedded chat window (optional) #
+├── order.php                   #untuk page order
+│
+├── /admin/
+│   ├── admin_login.php         # Admin login page
+│   ├── dashboard_admin.php     # Admin dashboard overview
+│   ├── admin_menu.php          # Add/edit/delete menu items
+│   ├── admin_order.php         # View all customer orders
+│   ├── admin_user.php          # Manage users
+│   ├── admin_sales.php         # Sales reports (PDF/chart)
+│   └── admin_promo.php         # Manage discount/promotion
+
+
+IFFAH AMIRAH (Frontend UI + Customer Features)
+AMIRAH IZZATI (Backend & Admin Dashboard)
+DURRANI KHALISH (Auth System & User Profile)
+ASYASHAFIEQAF (Payment + Admin Order/User)
+
+| Nama            | Fokus                            | Fail Utama                                                |
+| --------------- | -------------------------------- | --------------------------------------------------------- |
+| IFFAH AMIRAH    | Frontend + Customer Features     | `index.php`, `menu.php`, `review.php`, `style.css`        |
+| AMIRAH IZZATI   | Admin Backend + Dashboard        | `admin_menu.php`, `admin_sales.php`, `checkout.php`       |
+| DURRANI KHALISH | Login/Register/Profile + Chatbot | `login.php`, `register.php`, `profile.php`, `chatbot.php` |
+| ASYASHAFIEQAF   | Checkout + Admin Order/User      | `checkout.php`, `admin_order.php`, `admin_user.php`       |
