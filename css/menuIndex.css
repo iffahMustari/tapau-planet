@@ -1,0 +1,129 @@
+
+  .modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+
+  .modal-content {
+    width: 340px;
+    background: #fff;
+    padding: 28px 24px 24px 24px;
+    border-radius: 18px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.13);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.3s;
+    position: relative;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px);}
+    to { opacity: 1; transform: translateY(0);}
+  }
+
+  .modal-content img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    margin-bottom: 16px;
+    object-fit: cover;
+    height: 160px;
+  }
+
+  .modal-content h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: #2d3748;
+    text-align: center;
+  }
+
+  .modal-content .price {
+    font-weight: bold;
+    margin-bottom: 18px;
+    font-size: 1.15rem;
+    color: #4f46e5;
+    letter-spacing: 0.5px;
+  }
+
+  .qty-control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    gap: 10px;
+  }
+
+  .qty-control button {
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+    border: none;
+    background: #e0e7ff;
+    color: #4f46e5;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 6px rgba(79,70,229,0.07);
+  }
+  .qty-control button:hover {
+    background: #c7d2fe;
+  }
+
+  .qty-control input {
+    width: 44px;
+    height: 36px;
+    text-align: center;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background: #f1f5f9;
+    color: #2d3748;
+    outline: none;
+  }
+
+  .add-btn {
+    padding: 12px 0;
+    width: 100%;
+    background: linear-gradient(90deg, #4f46e5 60%, #818cf8 100%);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(79,70,229,0.09);
+    transition: background 0.2s, transform 0.1s;
+    margin-top: 4px;
+  }
+  .add-btn:hover {
+    background: linear-gradient(90deg, #6366f1 60%, #a5b4fc 100%);
+    transform: translateY(-2px) scale(1.03);
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    font-size: 24px;
+    color: #a1a1aa;
+    cursor: pointer;
+    transition: color 0.2s;
+    z-index: 2;
+    font-weight: bold;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  .close-btn:hover {
+    color: #4f46e5;
+  }
+

@@ -1,0 +1,406 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #F3ECE5;
+    margin: 0;
+    padding: 0;
+    color: #4056A1;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    color: #4056A1;
+    margin-top: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 kolum */
+    gap: 20px;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 1400px;
+    padding: 0 16px;
+}
+
+.menu-column {
+    display: contents;
+}
+
+.food-menu-box {
+    background: #fff;
+    border-radius: 10px;
+    border: 1.5px solid #C5CBE3;
+    transition: border 0.2s;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.food-menu-box:hover {
+    border-color: #D79922;
+}
+
+.food-menu-img {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    background: #C5CBE3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.food-menu-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+}
+
+.food-menu-desc {
+    padding: 18px 14px 16px 14px;
+}
+
+.food-menu-desc h4 {
+    margin: 0 0 8px 0;
+    color: #3B3B3B;
+    font-size: 1.08em;
+    font-weight: 600;
+}
+
+.food-price {
+    color: #3B3B3B;
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.food-detail {
+    color: #666;
+    font-size: 0.98em;
+    margin-bottom: 12px;
+    opacity: 0.85;
+}
+
+.btn.btn-primary {
+    display: block;
+    background: #EFE9C7;
+    color: #5B5D6D;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 700; /* Tebalkan tulisan */
+    font-size: 1em;
+    border: none;
+    box-shadow: none;
+    transition: background 0.2s;
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+}
+
+.btn.btn-primary:hover {
+    background: #9c8f66;
+    color: #fff;
+}
+
+.error {
+    color: #F13C20;
+    background: #fff;
+    border: 1.5px solid #C5CBE3;
+    border-radius: 8px;
+    padding: 14px;
+    text-align: center;
+    margin: 30px auto;
+    max-width: 400px;
+    font-size: 1em;
+}
+
+/* Logo & Back Button Section */
+.menu-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.menu-header img {
+    height: 140px;
+    max-width: 220px;
+    width: auto;
+    display: inline-block;
+}
+.menu-header .back-btn {
+    display: inline-block;
+    margin: 12px auto 0 auto;
+    padding: 7px 18px;
+    background: #5B5D6D;
+    border: none;
+    border-radius: 20px;
+    color: #FAF8F5;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(60,72,120,0.08);
+    transition: background 0.2s;
+    text-align: center;
+}
+
+
+.menu-header .back-btn:hover {
+  background: #444653; /* Burnt orange / Terracotta */
+  color: #FAF8F5;      /* Light beige / Cream */
+}
+
+
+/* Modal Styles (moved from menu.php) */
+.modal {
+    width: 380px;
+    background: #fff;
+    padding: 28px 26px 26px 26px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.98);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    animation: fadeIn 0.25s ease-out forwards;
+    min-width: 280px;
+    width: auto;
+    max-width: 98vw;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.93);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.modal img {
+    width: 100%;
+    max-width: 210px;
+    border-radius: 12px;
+    margin-bottom: 14px;
+    object-fit: cover;
+    height: auto;
+    display: block;
+}
+
+.modal h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.22rem;
+    text-align: center;
+}
+
+.modal .price {
+    font-weight: bold;
+    margin-bottom: 16px;
+    font-size: 1.08rem;
+    color: #3B3B3B;
+}
+
+.qty-control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 10px;
+}
+
+.qty-control button {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    border: none;
+    background: #5B5D6D;
+    color: #FAF8F5;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.qty-control input {
+    width: 38px;
+    height: 32px;
+    text-align: center;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 1.08rem;
+    background: #f1f5f9;
+}
+
+.add-btn {
+    padding: 10px 0;
+    width: 100%;
+    background: #5B5D6D;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.08rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-size: 22px;
+    color: #a1a1aa;
+    cursor: pointer;
+    font-weight: bold;
+    background: none;
+    border: none;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+}
+
+/* Responsive - optional */
+@media (max-width: 1400px) {
+    .menu-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-container {
+        grid-template-columns: 1fr;
+        padding: 0 6px;
+    }
+    .food-menu-img {
+        height: 70px;
+    }
+    .food-menu-box {
+        margin-bottom: 14px;
+    }
+    .food-menu-desc h4 {
+        font-size: 1em;
+    }
+    .food-detail {
+        font-size: 1em;
+    }
+    .btn.btn-primary {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1em;
+    }
+}
+
+.nav-icon {
+    float: right;
+    margin-top: -12px; /* Adjust this value as needed to move the nav-icon upwards */
+    align-items: center;
+    padding: 1 4; /* Kurangkan padding kanan */
+    margin-right: 1000px; /* Tambah margin kanan untuk gerak ke kiri */
+}
+
+.nav-icon ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.nav-icon ul li {
+    display: inline-block;
+    margin-left: 25px;
+    vertical-align: middle;
+}
+
+.nav-icon ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    transition: color 0.2s;
+}
+
+.nav-icon ul li a:hover,
+.nav-icon ul li a:focus {
+    color: #e67e22;
+}
+
+.nav-icon ul li button {
+    font-size: 16px;
+    font-family: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0 5px;
+    vertical-align: middle;
+}
+
+.nav-icon ul li img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.menu-title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 30px auto 10px auto;
+    padding: 0 20px;
+}
+
+.menu-title-bar h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+    color: #4056A1;
+}
+
+.cart-link {
+    display: flex;
+    align-items: center;
+    background-color: #EFE9C7;
+    padding: 8px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.cart-link:hover {
+    background-color: #9c8f66;
+}
+
+.cart-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.cart-text {
+    font-weight: 600;
+    color: #5B5D6D;
+    font-size: 1rem;
+}
+

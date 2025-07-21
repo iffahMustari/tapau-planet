@@ -1,0 +1,464 @@
+/* =========================
+    Base Styles (Reset & Global)
+========================== */
+body.index {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+     max-width: 100%;
+  overflow-x: hidden;
+    background: url('images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.container {
+     width: 100%;
+     margin: 0 auto;
+     padding: 1% 0;
+}
+
+.img-responsive {
+     width: 100%;
+     display: block;
+}
+
+.img-curve {
+    border-radius: 0 !important;
+}
+
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-white { color: #ffffff; }
+
+.clearfix {
+     clear: both;
+     float: none;
+}
+
+a {
+     color: #bfa13a;
+     text-decoration: none;
+     transition: color 0.2s;
+}
+
+a:hover {
+     color: #e1bb47;
+     text-decoration: underline;
+}
+
+h2 {
+     color: #3B3B3B;
+     font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+     font-size: 3rem;
+     margin-bottom: 1.2rem;
+     letter-spacing: 0.5px;
+     font-weight: 500;
+}
+
+h3 {
+     font-size: 1.3rem;
+     color: #2f3542;
+     font-weight: 600;
+}  
+
+/* =========================
+    Buttons
+========================== */
+.btn {
+     padding: 0.8em 2em;
+     border: none;
+     font-size: 1rem;
+     border-radius: 8px;
+     background: #EFE9C7;
+     color: #5B5D6D ; /* <-- Edit warna font di sini */
+     cursor: pointer;
+     box-shadow: 0 2px 8px rgba(225,187,71,0.10);
+     transition: background 0.3s, transform 0.15s, box-shadow 0.2s;
+     font-weight: 600;
+     letter-spacing: 0.5px;
+     min-width: 100px; /* atau width: 120px; untuk lebar tetap */
+     text-align: center;
+}
+
+.btn-primary {
+     width: 60%;
+}
+
+.btn-primary:hover, .btn:hover {
+     background: #9c8f66;
+     color: #fff;
+     transform: translateY(-2px) scale(1.03);
+     box-shadow: 0 4px 16px rgba(225,187,71,0.18);
+}
+
+/* =========================
+    Categories Section
+========================== */
+.categories {
+     padding: 2% 0;
+     width: 100%;
+     background: #F3ECE5 url('../images/pattern.jpg') repeat;
+     border-radius: 0;
+     
+}
+
+.box-3 {
+     width: 20%;
+     float: left;
+     margin: 2% 0 2% 4%;
+     border-radius: 0;
+     box-shadow: 0 2px 12px rgba(225,187,71,0.08);
+     transition: box-shadow 0.2s, transform 0.15s;
+     overflow: hidden;
+}
+
+.box-3:hover {
+     
+     transform: translateY(-4px) scale(1.03);
+}
+
+.category-title {
+     margin-left: 100px;
+     position: relative;
+     top: -80px;
+     color: #000000;
+     font-family: 'Poppins', 'Inter', 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+     font-weight: 700;
+     font-size: 1.8rem;
+     text-shadow: 0 2px 8px rgba(60,72,88,0.18);
+}
+
+/* =========================
+    Food Menu Section
+========================== */
+html { scroll-behavior: smooth; }
+#menu { scroll-margin-top: 100px; }
+
+.tab {
+     display: flex;
+     justify-content: center;
+     gap: 1.2rem;
+     margin-bottom: 10px;
+}
+
+.tab button {
+     background: #fffdfa;
+     border: none;
+     outline: #aeaa8f;
+     cursor: pointer;
+     padding: 14px 28px;
+     border-radius: 0px 0px 0 0;
+     font-size: 1.1rem;
+     color: #aeaa8f;
+     font-weight: 600;
+     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+     box-shadow: 0 2px 8px rgba(225,187,71,0.06);
+}
+
+.tab button:hover, .tab button.active {
+     background: #cbc6a9;
+     color: #fff;
+     box-shadow: 0 4px 16px rgba(225,187,71,0.13);
+}
+
+.tablinks {
+    min-width: 120px;
+    max-width: 160px;
+    width: 140px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    border: none;
+    background: #f7ecd7;
+    color: #222;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin: 0 4px;
+}
+.tablinks.active, .tablinks:focus, .tablinks:hover {
+    background: #ff9800;
+    color: #fff;
+}
+
+.tabcontent {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 40px;
+     justify-content: center;
+     padding: 40px 0;
+     border-top: none;
+     background: #f8f6ef;
+     border-radius: 0 0 18px 18px;
+     box-shadow: 0 2px 16px rgba(225,187,71,0.06);
+}
+
+.food-menu {
+     background: #f8f6ef;
+     padding: 4% 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.food-menu-box {
+     display: flex;
+     align-items: center;
+     gap: 28px;
+     background: transparent;
+     border-radius: 14px;
+     padding: 22px 24px;
+     box-shadow: 0 8px 32px rgba(225,187,71,0.10), 0 2px 8px rgba(0,0,0,0.10);
+     width: 600px;
+     max-width: 500px;
+     transition: box-shadow 0.25s, transform 0.18s;
+     border: 1.0px solid #ffffff;
+     margin: 32px 3% 28px 3%;
+     position: relative;
+     overflow: hidden;
+     font-family: 'Montserrat', Arial, sans-serif;
+     background: #fff;
+     color: #222;
+}
+
+.food-menu-box:hover {
+     box-shadow: 0 16px 40px rgba(225,187,71,0.15);
+     transform: translateY(-6px) scale(1.02);
+}
+
+.food-menu-img {
+     width: 140px;
+     height: 180px;
+     object-fit: cover;
+     border-radius: 14px;
+     box-shadow: 0 2px 8px rgba(225,187,71,0.08);
+     flex-shrink: 0;
+     background: #fff8ef;
+     border: 2px solid #f2d85733;
+}
+
+.food-menu-desc {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.food-menu-desc h4 {
+     color: #3B3B3B; /* warna tajuk menu */
+     font-size: 1.3rem;
+     font-weight: 700;
+     margin-bottom: 10px;
+}
+
+.food-price {
+     font-size: 1.3rem;
+     color: #3B3B3B ; /* warna harga */
+     font-weight: bold;
+     margin: 8px 0 4px 0;
+}
+
+.food-detail {
+     font-size: 1.05rem;
+     color: #666;
+     margin-bottom: 10px;
+     line-height: 1.6;
+}
+
+.menu-container {
+     display: flex;
+     justify-content: center;
+     gap: 40px;
+     flex-wrap: wrap;
+     margin-top: 20px;
+}
+
+.menu-column {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+
+/* =========================
+    Social Section
+========================== */
+.social ul {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+}
+
+.social ul li {
+     display: inline-block;
+     padding: 1%;
+     margin: 0 8px;
+}
+
+.social ul li a {
+     display: inline-block;
+     background: #fffdfa;
+     border-radius: 50%;
+     width: 38px;
+     height: 38px;
+     line-height: 38px;
+     text-align: center;
+     color: #bfa13a;
+     font-size: 1.2rem;
+     box-shadow: 0 2px 8px rgba(225,187,71,0.08);
+     transition: background 0.2s, color 0.2s;
+}
+
+.social ul li a:hover {
+     background: #e1bb47;
+     color: #fff;
+}
+
+/* =========================
+    Form Inputs
+========================== */
+.inputBorder, .input-responsive {
+     border: 1.5px solid #e1bb47;
+     padding: 1.1em;
+     width: 100%;
+     margin-bottom: 2.5%;
+     border-radius: 7px;
+     font-size: 1rem;
+     background: #fffdfa;
+     transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.inputBorder:focus, .input-responsive:focus {
+     border-color: #bfa13a;
+     box-shadow: 0 2px 8px rgba(225,187,71,0.10);
+     outline: none;
+}
+
+/* =========================
+    Order Section
+========================== */
+.order {
+     width: 52%;
+     margin: 0 auto;
+     background: #fffdfa;
+     border-radius: 14px;
+     box-shadow: 0 2px 16px rgba(225,187,71,0.08);
+     padding: 2.5em 2em;
+}
+
+.order-label {
+     margin-bottom: 1%;
+     font-weight: bold;
+     color: #bfa13a;
+     font-size: 1.05rem;
+}
+
+/* =========================
+    Header Section
+========================== */
+.main-header {
+    text-align: center;
+}
+
+.header-title {
+    font-size: 70px;
+    font-family: 'Montserrat', 'Libre Baskerville', serif;
+    letter-spacing: 2px;
+    margin-bottom: 200px;
+    display: inline-block;
+    color: #000000; /* warna oren */
+}
+
+.header-subtitle {
+    font-size: 50px;
+}
+
+/* =========================
+    Responsive Design (Mobile)
+========================== */
+@media only screen and (max-width: 900px) {
+     .container { width: 96%; }
+     .food-menu-box { max-width: 98vw; }
+     .order { width: 95%; }
+}
+
+@media only screen and (max-width: 768px) {
+     .logo {
+          width: 80%;
+          float: none;
+          margin: 1% auto;
+     }
+
+     .menu ul {
+          text-align: center;
+     }
+
+     .food-search input[type="search"] {
+          width: 90%;
+          padding: 2%;
+          margin-bottom: 3%;
+     }
+
+     .btn, .btn-primary {
+          width: 100%;
+          padding: 1.2em;
+     }
+
+     .food-search {
+          padding: 10% 0;
+     }
+
+     .categories {
+          padding: 10% 0;
+          border-radius: 12px;
+     }
+
+     h2 {
+          margin-bottom: 10%;
+          font-size: 1.5rem;
+     }
+
+     .box-3 {
+          width: 100%;
+          margin: 4% auto;
+     }
+
+     .food-menu {
+          padding: 10% 0;
+     }
+
+     .food-menu-box {
+          width: 98%;
+          padding: 5%;
+          margin-bottom: 5%;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px;
+     }
+
+     .food-menu-img {
+          width: 100%;
+          height: 180px;
+          margin-bottom: 10px;
+     }
+
+     .social {
+          padding: 5% 0;
+     }
+
+     .order {
+          width: 100%;
+          padding: 1.5em 0.5em;
+     }
+}
+
+.color-gap {
+    width: 100%;
+    height: 40px;         /* tinggi gap */
+    background: #EFE9C7;  /* warna gap, boleh tukar ikut citarasa */
+    border: none;
+    margin: 0px 0;       /* jarak atas & bawah */
+}
+

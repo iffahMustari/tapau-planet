@@ -1,0 +1,162 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #fff;
+    background-size: cover;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.track-box {
+    max-width: 500px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.95);
+    border-radius: 18px;
+    padding: 32px 32px 24px 32px;
+    box-shadow: 0 8px 32px rgba(60,60,120,0.15);
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    color: #3b3b5c;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.info p, .info ul {
+    margin: 8px 0;
+    color: #444;
+    font-size: 15px;
+}
+
+.info ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.info li {
+    margin-bottom: 3px;
+}
+
+.progress-container {
+    margin: 32px 0 18px 0;
+    background: #e5e7eb;
+    border-radius: 30px;
+    height: 18px;
+    position: relative;
+    overflow: visible;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #fffbe6 0%, #a69b59 100%);
+    border-radius: 30px;
+    transition: width 0.7s cubic-bezier(.4,2.3,.3,1);
+    text-align: right;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding-right: 18px;
+    box-sizing: border-box;
+    line-height: 18px;
+    position: relative;
+    z-index: 2;
+}
+
+.progress-steps {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 22px;
+    left: 0;
+    z-index: 1;
+}
+
+.progress-step {
+    font-size: 12px;
+    color: #a1a1aa;
+    text-align: center;
+    width: 20%;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.progress-step.active {
+    color: #c9bf87;
+    font-weight: 700;
+}
+
+.status-text {
+    margin-top: 24px;
+    font-size: 16px;
+    text-align: center;
+    color: #c9bf87;
+    font-weight: 600;
+}
+
+.reload-msg {
+    text-align: center;
+    font-size: 12px;
+    color: #b0b0b0;
+    margin-top: 10px;
+}
+
+.accent {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 6px;
+    background: linear-gradient(90deg, #fffbe6 0%, #c1b46c 100%);
+    border-radius: 6px;
+    opacity: 0.7;
+}
+
+.track-logo {
+    text-align: center;
+    margin-bottom: 18px;
+}
+.track-logo-img {
+    height: 150px;
+    max-width: 150px;
+    width: auto;
+    display: inline-block;
+}
+.track-qty {
+    color: #c1b46c;
+    font-weight: 600;
+}
+.track-type {
+    color: #c1b46c;
+}
+.track-total {
+    color: #c1b46c;
+    font-weight: 600;
+}
+.track-status {
+    color: #c1b46c;
+}
+.track-back-btn {
+    text-align: center;
+    margin-top: 24px;
+}
+.back-btn {
+    display: inline-block;
+    padding: 10px 28px;
+    background: #4a4c5b;
+    border: none;
+    border-radius: 24px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(60,72,120,0.08);
+    transition: background 0.2s;
+    text-align: center;
+}
+.back-btn:hover {
+    background: #5B5D6D;
+}

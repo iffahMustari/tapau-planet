@@ -1,0 +1,138 @@
+/* Navbar Section */
+
+
+.navbar .container {
+    max-width: 1200px;
+    margin: 100 auto;
+    padding: 1000 200px;
+}
+
+.logo img {
+    height: 150px;
+    width: 150px;
+    margin-top: 0px;
+}
+
+.nav-icon {
+    float: right;
+    margin-top: -12px; /* Adjust this value as needed to move the nav-icon upwards */
+    align-items: center;
+    padding: 1 4; /* Kurangkan padding kanan */
+    margin-right: 1000px; /* Tambah margin kanan untuk gerak ke kiri */
+}
+
+.nav-icon ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.nav-icon ul li {
+    display: inline-block;
+    margin-left: 25px;
+    vertical-align: middle;
+}
+
+.nav-icon ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    transition: color 0.2s;
+}
+
+.nav-icon ul li a:hover,
+.nav-icon ul li a:focus {
+    color: #e67e22;
+}
+
+.nav-icon ul li button {
+    font-size: 16px;
+    font-family: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0 5px;
+    vertical-align: middle;
+}
+
+.nav-icon ul li img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.header {
+    color: #222;
+    font-weight: bold;
+    margin-top: 40px;
+    display: inline-block;
+    line-height: 1.1;
+    letter-spacing: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav-links {
+    float: right;
+    margin-top: -12px; /* Adjust this value as needed to move the links upwards */
+    align-items: center;
+    padding: 0 190px;
+}
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    
+    border-radius: 1000px; /* Sudut bulat */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.278); /* Bayang kotak */
+    display: inline-block; /* Supaya kotak ikut saiz kandungan */
+    margin: 0; /* Buang margin default */
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin-left: 25px;
+    vertical-align: middle;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    transition: color 0.2s;
+    padding: 10px 18px; /* Ruang dalam kotak */
+    border-radius: 998px; /* Sudut bulat pada link */
+    display: inline-block;
+}
+
+.nav-links ul li a:hover,
+.nav-links ul li a:focus {
+    color: #e67e22;
+    background: rgba(0, 0, 0, 0.17) /* Latar belakang hover */
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .navbar .container {
+        padding: 0 10px;
+    }
+    .nav-icon {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .nav-icon ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .logo {
+        text-align: center;
+    }
+}

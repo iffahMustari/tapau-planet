@@ -1,0 +1,78 @@
+body.feedback {
+            background: #f7f7f9 !important; /* example color */
+            background-size: cover;
+            font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .feedback-container {
+            background: #fff;
+            max-width: 400px;
+            margin: 60px 40px 60px auto;
+            padding: 32px 28px 24px 28px;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(60, 72, 88, 0.15);
+        }
+        .feedback-container h2 {
+            text-align: center;
+            margin-bottom: 24px;
+            color: #3b3b3b;
+        }
+        .starwidget {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 18px;
+        }
+        .starwidget input[type="radio"] {
+            display: none;
+        }
+        .starwidget label {
+            font-size: 2rem;
+            color: #d1d5db;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .starwidget input[type="radio"]:checked ~ label,
+        .starwidget label:hover,
+        .starwidget label:hover ~ label {
+            color: #d5cfaa;
+        }
+        .starwidget label:active {
+            transform: scale(1.1);
+        }
+        textarea[name="comment"] {
+            width: 100%;
+            min-height: 80px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 1rem;
+            margin-bottom: 18px;
+            resize: vertical;
+            transition: border 0.2s;
+        }
+        textarea[name="comment"]:focus {
+            border: 1.5px solid #6366f1;
+            outline: none;
+        }
+        button[type="submit"] {
+            width: 100%;
+            background: #5B5D6D;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 0;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button[type="submit"]:hover {
+            background: #4a4c5b;
+        }
+        button[disabled] {
+            background: gray;
+            cursor: not-allowed;
+        }

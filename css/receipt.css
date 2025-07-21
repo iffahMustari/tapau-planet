@@ -1,0 +1,117 @@
+
+         body {
+    background: url('images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding: 8px;
+    min-height: 100vh;
+  }
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: rgba(255,255,255,0.92);
+    border-radius: 16px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  }
+  .navbar .logo img { max-height: 90px; }
+  .menu ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 28px; }
+  .menu ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #222;
+    transition: 0.3s;
+    padding: 10px 22px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+  }
+  .menu ul li a:hover { background: #04AA6D; color: #fff; }
+  .container {
+    background: rgba(255,255,255,0.98);
+    padding: 32px 38px;
+    border-radius: 18px;
+    max-width: 520px;
+    margin: 0 auto 36px auto;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.09);
+    border: 1.5px solid #e3e8ee;
+  }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            padding: 30px;
+            background-color: #f4f7f9;
+        }
+        .receipt-container {
+            max-width: 800px; 
+            margin: auto; 
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            box-sizing: border-box;
+        }
+        .invoice-box table {
+            width: 100%; 
+            max-width: 800px;
+            border-collapse: collapse; 
+        }
+        .invoice-box table td {
+            vertical-align: top;
+        }
+        .title img {
+            width: 100%;
+            max-width: 300px;
+        }
+        .section-title {
+            margin-top: 25px;
+            color: #444;
+            font-weight: 600;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 6px;
+        }
+        .info, .cart {
+            margin-top: 12px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        .total {
+            font-weight: bold;
+            text-align: right;
+            margin-top: 12px;
+            color: #04AA6D;
+            font-size: 18px;
+        }
+        .back-btn {
+            display: block;
+            margin: 28px auto 0 auto;
+            text-align: center;
+            background: #04AA6D;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        .back-btn:hover {
+            background: #028a57;
+        }
+        /* Padding antara logo dan alamat */
+        .invoice-box table .title {
+            width: 40%;
+            padding-right: 25px; /* CHANGED */
+        }
+        .invoice-box table td.address {
+            width: 50%;
+            padding-left: 170px; /* CHANGED */
+            font-size: 14px;
+            line-height: 1.4;
+            vertical-align: middle;
+        }
